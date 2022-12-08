@@ -1,3 +1,5 @@
+all: main.o my_mat.o
+	gcc -c main.o my_mat.o
 connection: main.o my_mat.o
 	gcc main.o my_mat.o -o connection
 
