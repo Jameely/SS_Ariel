@@ -1,5 +1,6 @@
-all: main.o my_mat.o
-	gcc -c main.o my_mat.o
+all: main.c my_mat.c my_mat.h
+	gcc -c main.c my_mat.c 
+
 connection: main.o my_mat.o
 	gcc main.o my_mat.o -o connection
 
